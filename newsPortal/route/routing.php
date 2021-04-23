@@ -8,7 +8,7 @@
     $response = Controller::StartSite();
   }
 
-  elseif($path ==  'all') {
+  elseif($path == 'all') {
     $response = Controller::AllNews();
   }
   elseif($path ==  'category' and isset($_GET['id'])) {
