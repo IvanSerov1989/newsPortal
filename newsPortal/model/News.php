@@ -8,8 +8,8 @@ class News{
     return $arr;
   }
 
-  public static function getAllNews() {
-    $query = "SELECT * FROM news ORDER BY id DESC" ;
+  public static function getallNews() {
+    $query = "SELECT * FROM news ORDER BY id DESC";
     $db = new Database();
     $arr = $db->getAll($query);
     return $arr;

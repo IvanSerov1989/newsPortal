@@ -12,6 +12,11 @@ class Controller {
     include_once 'view/category.php';
   }
 
+  public static function AllNews() {
+    $arr = News::getAllNews();
+    include_once 'view/allnews.php';
+  }
+
   public static function NewsByCatID($id) {
     $arr = News::getNewsByCategoryID($id);
     include_once 'view/catnews.php';
@@ -19,7 +24,7 @@ class Controller {
 
   public static function NewsByID($id) {
     $n = News::getNewsByID($id);
-    include_once 'view/readews.php';
+    include_once 'view/readnews.php';
   }
 
   public static function error404() {
